@@ -1,0 +1,102 @@
+package.json :- basicly It is a Configuration for NPM 
+    { It handlse the dependencies and devDependencies in package.json file } ex like verson , description etc.. 
+The most importent package in Your project is Bundler , it will help You to pack all of the app  files into one file and make them accessible from there and send to production 
+    {
+        ex :- webpake , parcel , vet but and at the end of day do same things 
+    }
+    TO install parcal  : npm install -D parcel
+    {
+        we use parameter -D  because it's devDependencies 
+        The base different  between dependencies and devDependencies is that:
+        * Dependencies are stuff needed to run your application (e.g., a library your app uses)
+        * DevDependencies are stuff needed to  develop your application (e.g., a linter or testing framework).
+    }
+    ^ :- when ever the minner update come it will update automaticly itself.
+    ~ :- When ever the major update come it will update automaticly itself.
+    {
+        it is good for use ^ it  is safe.
+    }
+Questions :- different btw package.json and package-lock.josn ?
+    {
+        #package-lock.josn:-
+        {
+            1. This file contains the exact versions of all packages last installed by npm.
+            2. If you change anything in your project, or even just want to know what was installed on a specific date, this is the place to look. 
+        }
+        #package.json:-
+        {
+            it is a configuration for our npm
+            1. This file tells npm which packages you want to install, along with any specific version numbers
+            2. This file tells npm what you depend on in order to run your application, and which versions you required, 
+            3. This file tells npm what to di.e., which dependencies should be installed.
+        } 
+    }
+What is node_modules ?
+    {
+        1. A folder where NodeJS stores all the modules that you have installed using npm.
+           OR It also Know as file of all the dependencies
+    }
+What is gitignore ?
+    {   
+        1. A file in your project’s root directory that lists patterns of files that Git should ignore.
+            You can create this file with any text 
+            { [Not to Put On Github]
+                package.josn
+                package-lock.josn
+            }
+    }  
+different btw npm and npx?
+    {
+        Npm is the package manager for JavaScript, while NPX is an easy way to run scripts from inside a package without installing them first.
+    }
+CDN link is not a good way to start react app, why ?
+    {
+        Because CDN links do not provide anything about how your code works or what libraries/frameworks you used.
+        CDN links do not provide an easy way to install and manage frontend libraries or frameworks like React, Angular, Vue, etc. They
+    }
+------> Parcel
+    {
+        - Dev build 
+        - local server  
+        - HMR -  Hot Module Replacement 
+        - file watching Algorithm -writen in C++ 
+        - Caching use to build the faster app 
+        - Image Optimiztion 
+        - Minification 
+        - Bundle 
+        - Compressing  
+        - Code splitting 
+        - differentional bundle - support older browers 
+        - Diagnostic 
+        - error Handlying 
+        - HTTPs
+        - Tree Shaking - Remove unsed code in final bundle
+        - different dev and Production builds
+    }
+Write npx parcel build index.html , what will happen ?{ First Remove the   "main": "app.js" from package.josn}
+    {
+
+    }
+Dist :- Contain development build files and the product host from this not from main and also compressed file in it . It is highly optimzed and very fast.
+
+But note that
+    {
+        - parcel and dist is temparary folder which can be delated  at any time
+        - it is automaticaly genrated  when you run parcel index.html
+        - node module in local are different from the node module on the server
+        - we don't have to put dist and parcel-cache in github
+    }
+-----Browserslist------
+    {
+        Now you have to tell your app what browser should it supported.
+        so in package.josn   add following script  
+        {
+             "browserslist": [
+            <!-- (array of browser which it need to support) -->
+            "last 2 Chrome version"
+            "last 2 Firefox version"
+            ]
+        }
+        for this go on and seach  browserslist online
+
+    }

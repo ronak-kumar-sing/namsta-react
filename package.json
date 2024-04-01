@@ -1,0 +1,27 @@
+{
+  "name": "namsta-react",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/ronak-kumar-sing/namsta-react.git)"
+  },
+  "keywords": [],
+  "author": "Ronak",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist" : [
+    "last 2 Chrome version",
+    "last 2 Firefox version"
+  ]
+}
