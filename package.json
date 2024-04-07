@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "start":"parcel r.html",
+    "build":"parcel build app.js",
     "test": "jest"
   },
   "repository": {

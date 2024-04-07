@@ -100,3 +100,25 @@ But note that
         for this go on and seach  browserslist online
 
     }
+How to build the scrept for start ? instat of npx parcel .html?
+{
+       1 Go in package.json file .
+       2 find a the script section .
+       "scripts": {
+           "test": "jest"
+        },
+        3 Add another key value pair  like this :
+        "start" : parcel r.html
+    Same step for building 
+} Than  npm run start = npm start = npm parcel r.html
+//////////JSX/////////
+note :- JSX is not HTMl in JS  , it look like html  but it not Html
+when we are writing code fist Priority taken to Human readly and then machine readly
+ <!-- const jsxheading = <h1 id="heading" >the match will start from  8 pm</h1>; -->
+ {
+    this code not js it not run in browser but the parcel is doing for us 
+    babel{
+        In parcel babel is transfiling our code basely it is javascreipt compiler ;
+        babel also help to convert the code for older JS  browser;
+    }
+ }
